@@ -159,7 +159,6 @@ def aloitaPeli(vaikeus):
     tarkistusNappi.grid(row=1, column=0, columnspan=4, sticky=W)
 
     
-    
 def mainmenu(vastausFrame):
     vastausFrame.grid_remove()
 
@@ -211,5 +210,5 @@ root.title("SUDOKU")
 
 root.geometry("+600+200")
 # MACOS
-root.configure(background="white")
+'''root.configure(background="white")'''
 root.mainloop()
