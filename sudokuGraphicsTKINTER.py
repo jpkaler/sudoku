@@ -204,7 +204,7 @@ keskitaso.grid(row=0, column=0, rowspan=3, columnspan=2)
 vaikea = Button(frames[5], text="Vaikea", height=6, width=12, background=taustavari, foreground=tekstivari, font=fontText, command=lambda: aloitaPeli(3))
 vaikea.grid(row=0, column=0, rowspan=3, columnspan=2)
 
-icon = PhotoImage(file="./icon.png")
+icon = PhotoImage(file="./sudoku/icon.png")
 root.iconphoto(False, icon)
 root.title("SUDOKU")
 

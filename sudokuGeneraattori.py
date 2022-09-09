@@ -54,10 +54,10 @@ def taytaSudoku(sudoku):
                         random.shuffle(numberList)
                         # Piirrä ruudukko
                         x += 1
-                        """ for z in sudoku:
+                        for z in sudoku:
                             print(z)
-                        time.sleep(0.5)
-                        print() """
+                        time.sleep(0.1)
+                        print()
                         break
 
                     # Jos mikään numero ei passaa
@@ -81,10 +81,10 @@ def taytaSudoku(sudoku):
                         laskuri2 += 1
                         x = 0
                         # Piirrä ruudukko
-                        """ for z in sudoku:
+                        for z in sudoku:
                             print(z)
                         time.sleep(0.1)
-                        print() """
+                        print()
             else:
                 x += 1
         y += 1
