@@ -47,7 +47,7 @@ def taytaRuudukko(sudoku, frames, vaikeus, vastausFrame):
     # Looppaa oikean vastausruudukon numerot ja lisää vastaavat napit pelilaudalle
     for i in range(9):
         for j in range(9):
-            buttons.append(Button(frames[(i//3)*3+(j//3)], text=sudoku[i][j], width=3, height=2, borderwidth=1, relief="solid", background='black', foreground=tekstivari, font=fontNumbers, command=lambda i=((i*9)+j):buttonPress(i, buttons)))
+            buttons.append(Button(frames[(i//3)*3+(j//3)], text=sudoku[i][j], width=4, height=2, borderwidth=1, relief="solid", background=taustavari, foreground=tekstivari, font=fontNumbers, command=lambda i=((i*9)+j):buttonPress(i, buttons)))
 
     # Poistaa tietyn määrän nappeja näkyvistä vaikeustason mukaan
     vaikeustaso(buttons, vaikeus)
@@ -187,7 +187,7 @@ frames = luoJaNaytaKehykset()
 buttons = []
 for i in range(9):
     for j in range(9):
-        buttons.append(Button(frames[(i//3)*3+(j//3)], text='', width=3, height=2, borderwidth=1, relief="solid", background=taustavari, foreground=tekstivari, font=fontNumbers))
+        buttons.append(Button(frames[(i//3)*3+(j//3)], text='', width=4, height=2, borderwidth=1, relief="solid", background=taustavari, foreground=tekstivari, font=fontNumbers))
 for i in range(81):
     buttons[i].grid(row=i//9, column=i%9)
 
@@ -204,7 +204,7 @@ keskitaso.grid(row=0, column=0, rowspan=3, columnspan=2)
 vaikea = Button(frames[5], text="Vaikea", height=6, width=12, background=taustavari, foreground=tekstivari, font=fontText, command=lambda: aloitaPeli(3))
 vaikea.grid(row=0, column=0, rowspan=3, columnspan=2)
 
-icon = PhotoImage(file="./sudoku/icon.png")
+icon = PhotoImage(file="./icon.png")
 root.iconphoto(False, icon)
 root.title("SUDOKU")
 
