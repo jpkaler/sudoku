@@ -1,6 +1,6 @@
 # Sudoku GUI - Python Tkinter
 
-A graphical user interface for playing sudoku on three difficulties. Game uses *Python's Tkinter* module which works best with **PC** users.
+A graphical user interface for playing sudoku on three difficulties. Game uses *Python's Tkinter* module which works best with **Windows** users.
 
 ### Gameplay
 
